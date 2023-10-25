@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles'
 import LikeButton from '../like_button'
+import Timestamp from '../timestamp'
 
 const Content = (props) => {
   const {data} = props
@@ -29,9 +30,7 @@ const Content = (props) => {
               {data.edge_media_preview_like.count} likes
             </p>
 
-            <p style={styles.daysAgo}>
-              {data.taken_at_timestamp} days ago
-            </p>
+            <Timestamp data={data} />
           </div>
 
             <LikeButton />

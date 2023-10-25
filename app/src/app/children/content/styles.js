@@ -64,12 +64,4 @@ export default {
     fontWeight: '700',
     fontSize: '1.3rem'
   },
-
-  daysAgo: {
-    fontWeight: '300',
-    opacity: '0.5',
-    fontSize: '1rem',
-    textTransform: 'uppercase',
-    letterSpacing: '.01em'
-  }
 }
