@@ -16,7 +16,7 @@ const LikeButton = () => {
       style={styles}
       onClick={handleLike}
     >
-      {liked ? <UnlikedIcon /> : <LikedIcon /> }
+      {liked ? <LikedIcon /> : <UnlikedIcon /> }
     </button>
   );
 };
