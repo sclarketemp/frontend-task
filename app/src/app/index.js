@@ -1,19 +1,17 @@
 import React from 'react'
 import Image from './children/image'
-import LikeButton from './children/like_button'
+import Content from './children/content'
 import styles from './styles'
 
 const App = (props) => {
   const { data } = props
   return (
     <main style={styles.main}>
-      <div style={styles.image}>
+      <div style={styles.imageColumn}>
         <Image data={data} />
       </div>
-      <div style={styles.text}>
-        <p>User block</p>
-        <p>Comments block</p>
-        <LikeButton />
+      <div style={styles.contentColumn}>
+        <Content data={data} />
       </div>
     </main>
   )

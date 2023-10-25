@@ -5,26 +5,35 @@ export default {
     borderBottomRightRadius: '3px',
     borderTopRightRadius: '3px',
     maxWidth: '935px',
-    margin: '16px auto',
-    width: 'calc(100% - 40px)',
+    margin: '4.8rem auto',
+    width: 'calc(100% - 4rem)',
 
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
     alignContent: 'stretch',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    height: '44rem',
   },
 
-  image: {
+  imageColumn: {
     order: '1',
     flex: '1 0 60%',
-    alignSelf: 'flex-start'
+    alignSelf: 'flex-start',
+    backgroundColor: '#fbfbfa',
+    height: '100%'
   },
 
-  text: {
+  contentColumn: {
     order: '2',
-    flex: '1 0 40%',
-    alignSelf: 'flex-start'
-  }
+    flex: '1 0 calc(40% - 3rem)',
+    alignSelf: 'flex-start',
+    height: '100%',
+    paddingInlineStart: '3rem',
+    display: 'flex',
+    flexGrow: 'wrap',
+    height: '100%',
+    flexDirection: 'column'
+  },
 }
