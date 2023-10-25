@@ -32,7 +32,6 @@ export default {
     height: '100%',
     paddingInlineStart: '3rem',
     display: 'flex',
-    flexGrow: 'wrap',
     height: '100%',
     flexDirection: 'column'
   },
