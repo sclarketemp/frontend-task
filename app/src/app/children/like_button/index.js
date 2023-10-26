@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import styles from './styles';
 import UnlikedIcon from './children/unliked_icon';
 import LikedIcon from './children/liked_icon';
 
-const LikeButton = () => {
+const LikeButton = (props) => {
+  const {styles} = props;
   const [liked, setLiked] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleLike = () => {
     setLiked(!liked);
@@ -13,10 +14,12 @@ const LikeButton = () => {
   return (
     <button
       type='button'
-      style={styles}
+      style={styles.likeButton}
       onClick={handleLike}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      {liked ? <LikedIcon /> : <UnlikedIcon /> }
+      {liked || isHovered ? <LikedIcon styles={styles} /> : <UnlikedIcon styles={styles} /> }
     </button>
   );
 };

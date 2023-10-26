@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles'
 import LikeButton from '../like_button'
+import Comments from '../comments'
 import Timestamp from '../timestamp'
 
 const Content = (props) => {
@@ -11,9 +12,13 @@ const Content = (props) => {
         <div style={styles.contentHeaderInner}>
           <div style={styles.userIcon}></div>
           <div style={styles.userInfo}>
-            <p style={styles.userName}>
+            <a
+              href={`https://instagram.com/${data.owner.username}`}
+              style={styles.userName}
+            >
               {data.owner.username}
-            </p>
+            </a>
+
             <p style={styles.userLocale}>
               {data.location.name}
             </p>
@@ -21,7 +26,7 @@ const Content = (props) => {
         </div>
       </header>
       <div style={styles.contentMain}>
-        <p>Comments block</p>
+        <Comments data={data} />
       </div>
       <footer style={styles.contentFooter}>
         <div style={styles.contentFooterInner}>
@@ -33,7 +38,7 @@ const Content = (props) => {
             <Timestamp data={data} />
           </div>
 
-            <LikeButton />
+            <LikeButton styles={styles} />
         </div>
       </footer>
     </>

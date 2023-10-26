@@ -40,7 +40,9 @@ export default {
 
   // Verbal interaction area...
   contentMain: {
-    flexGrow: '1'
+    overflowY: 'auto',
+    paddingInlineEnd: '3.2rem',
+    height: '100%'
   },
 
   // Tool interaction area...
@@ -64,4 +66,11 @@ export default {
     fontWeight: '700',
     fontSize: '1.3rem'
   },
+
+  // Like Button
+  likeButton: {
+    paddingBlock: '0.4rem',
+    display: 'flex',
+    height: 'fit-content'
+  }
 }

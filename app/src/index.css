@@ -25,7 +25,6 @@ button {
   overflow: visible;
 
   background: transparent;
-  cursor: pointer;
 
   /* inherit font & color from ancestor */
   color: inherit;
@@ -40,6 +39,32 @@ button {
 
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+  transition: opacity 300ms ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+  padding-left: 0;
+  margin-block: 0;
 }
 
 code {
