@@ -3,7 +3,10 @@ export default {
     display: 'flex',
     flexDirection: 'column',
     rowGap: '0.8rem',
-    paddingBlock: '1.4rem'
+    paddingBlock: '1.4rem',
+    overflowY: 'auto',
+    paddingInlineEnd: '3.2rem',
+    height: '100%'
   },
 
   comment: {

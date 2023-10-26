@@ -4,7 +4,7 @@ import styles from './styles'
 const Header = (props) => {
   const { data } = props
   return (
-    <div style={styles.header}>
+    <header style={styles.header}>
       <a href={`https://instagram.com/${data.owner.username}`}>
         <img
           src={data.owner.profile_pic_url}
@@ -26,7 +26,7 @@ const Header = (props) => {
           {data.location.name}
         </p>
       </div>
-    </div>
+    </header>
   )
 }
 

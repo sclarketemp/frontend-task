@@ -2,7 +2,8 @@ export default {
   footer: {
     display: 'flex',
     justifyContent: 'space-between',
-    paddingBlock: '0.4rem'
+    paddingBlock: '0.4rem',
+    paddingInlineEnd: '3rem'
   },
 
   footerInfo: {

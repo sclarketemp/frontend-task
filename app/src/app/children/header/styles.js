@@ -1,9 +1,11 @@
 export default {
   header: {
-    maxWidth: '22rem',
     display: 'flex',
     gap: '1.2rem',
-    alignItems: 'center'
+    alignItems: 'center',
+    borderBlockEnd: '1px solid #efeef1',
+    marginInlineEnd: '3rem',
+    paddingBlock: '1.6rem'
   },
 
   headerIcon: {
@@ -17,7 +19,8 @@ export default {
   headerInfo: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '0.4rem'
+    gap: '0.4rem',
+    maxWidth: '22rem',
   },
 
   headerName: {
