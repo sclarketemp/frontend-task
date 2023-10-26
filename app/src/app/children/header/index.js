@@ -5,11 +5,19 @@ const Header = (props) => {
   const { data } = props
   return (
     <div style={styles.header}>
-      <div style={styles.headerIcon}></div>
+      <a href={`https://instagram.com/${data.owner.username}`}>
+        <img
+          src={data.owner.profile_pic_url}
+          style={styles.headerIcon}
+          aria-label={`Go to ${data.owner.username}'s Instagram profile`}
+        />
+      </a>
+
       <div style={styles.headerInfo}>
         <a
           href={`https://instagram.com/${data.owner.username}`}
           style={styles.headerName}
+          aria-label={`Go to ${data.owner.username}'s Instagram profile`}
         >
           {data.owner.username}
         </a>
